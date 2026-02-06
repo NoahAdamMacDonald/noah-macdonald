@@ -1,0 +1,20 @@
+.contact-card {
+  max-width: 900px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* Ensure LinkedIn badge doesn't shrink */
+.linkedin-badge-wrapper {
+  flex-shrink: 0;
+}
+
+/* Contact info alignment */
+.contact-info a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
