@@ -1,0 +1,33 @@
+<div class="card h-100">
+
+  <div class="project-image-wrapper">
+    <img [src]="image" class="project-image" [alt]="title">
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title">
+      <a *ngIf="projectLink; else noLink" [href]="projectLink" target="_blank">
+        {{ title }}
+      </a>
+      <ng-template #noLink>{{ title }}</ng-template>
+    </h5>
+
+    <p class="card-text">
+      <ng-container *ngFor="let part of description">
+        <ng-container *ngIf="isString(part)">
+          {{ part }}
+        </ng-container>
+
+        <ng-container *ngIf="!isString(part)">
+          <a [href]="part.url" target="_blank">{{ part.text }}</a>
+        </ng-container>
+      </ng-container>
+    </p>
+  </div>
+
+  <div class="card-footer">
+    <p><strong>Skills:</strong> {{ skills.join(', ') }}</p>
+    <p><strong>Languages:</strong> {{ languages.join(', ') }}</p>
+    <p><a [href]="github" target="_blank">GitHub</a></p>
+  </div>
+</div>
