@@ -24,10 +24,51 @@
       </ng-container>
     </p>
   </div>
-
   <div class="card-footer">
-    <p><strong>Skills:</strong> {{ skills.join(', ') }}</p>
-    <p><strong>Languages:</strong> {{ languages.join(', ') }}</p>
-    <p><a [href]="github" target="_blank">GitHub</a></p>
+
+      <!-- Skills -->
+    <div class="footer-row">
+      <strong class="footer-label">Skills:</strong>
+      <div class="icon-row">
+      <img *ngFor="let skill of skills"
+        [src]="skill.icon"
+        [alt]="skill.name"
+        [title]="skill.name"
+        class="skill-icon">
+      </div>
+    </div>
+    <hr class="footer-divider">
+
+    <!-- Languages -->
+    <div class="footer-row">
+      <strong class="footer-label">Languages:</strong>
+      <div class="icon-row">
+      <img *ngFor="let lang of languages"
+        [src]="lang.icon"
+        [alt]="lang.name"
+        [title]="lang.name"
+        class="skill-icon">
+      </div>
+    </div>
+    <hr class="footer-divider">
+
+    <div class="github-link">
+      <a [href]="github" target="_blank">
+      <img src="assets/icons/github.svg" alt="GitHub" class="github-icon">
+      </a>
+    </div>
+
+    <div class="icon-attribution text-muted" *ngIf="getSources().length > 0">
+      Icons from
+      <ng-container *ngFor="let source of getSources(); let i = index; let last = last">
+        <a [href]="source.url" target="_blank">{{ source.name }}</a>
+        <span *ngIf="!last">
+          <span *ngIf="i < getSources().length - 2">, </span>
+          <span *ngIf="i === getSources().length - 2"> and </span>
+        </span>
+      </ng-container>
+    </div>
   </div>
 </div>
+
+

@@ -3,19 +3,20 @@
 
   <!--Card Container-->
   <div class="row row-cols-1 row-cols-md-2 g-4">
-
-  <div class="col" *ngFor="let p of projects">
-    <app-project-card
-      [title]="p.title"
-      [description]="p.description"
-      [image]="p.image"
-      [skills]="p.skills"
-      [languages]="p.languages"
-      [github]="p.github"
-      [projectLink]="p.projectLink">
-    </app-project-card>
+    <div class="col" *ngFor="let p of projects">
+      <app-project-card
+        [title]="p.title"
+        [description]="p.description"
+        [image]="p.image"
+        [skills]="mapIcons(p.skills, 'skills')"
+        [languages]="mapIcons(p.languages, 'languages')"
+        [github]="p.github"
+        [projectLink]="p.projectLink"
+        [sources]="icons.sources">
+      </app-project-card>
+    </div>
   </div>
-
 </div>
 
-</div>
+
+

@@ -11,8 +11,8 @@
         ". Website made purely for learning full stack development using Angular for front end, Hapi for backend, Firebase as authentication and Google Cloud to manage hosting and the SQL database. The website does not function as a real listing website for selling or buying items."
       ],
       "image": "assets/projects/linkedIn-learning-logo.svg",
-      "skills": ["Angular", "Hapi", "Firebase", "Google Cloud", "NodeJS"],
-      "languages": ["Typescript", "HTML", "Javascript", "MySQL"],
+      "skills": ["Angular", "Hapi", "Firebase", "Google Cloud"],
+      "languages": ["Typescript", "HTML", "MySQL", "Javascript"],
       "github": "https://github.com/NoahAdamMacDonald/buy-and-sell",
       "projectLink": "https://buy-and-sell-7e136.nn.r.appspot.com"
     },

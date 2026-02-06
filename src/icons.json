@@ -1,0 +1,70 @@
+{
+  "icons": {
+    "github": {
+      "name": "GitHub",
+      "icon": "assets/icons/github.svg",
+      "source": "icons8"
+    }
+  },
+  "skills": {
+    "Angular": {
+      "name": "Angular",
+      "icon": "assets/skills/angular.svg",
+      "source": "icons8"
+    },
+    "Hapi": {
+      "name": "Hapi",
+      "icon": "assets/skills/hapi.svg",
+      "source": "svgrepo"
+    },
+    "Firebase": {
+      "name": "Firebase",
+      "icon": "assets/skills/firebase.svg",
+      "source": "icons8"
+    },
+    "Google Cloud": {
+      "name": "Google Cloud",
+      "icon": "assets/skills/google-cloud.svg",
+      "source": "icons8"
+    },
+    "CloudFlare": {
+      "name": "CloudFlare",
+      "icon": "assets/skills/cloudflare.svg",
+      "source": "icons8"
+    }
+  },
+
+  "languages": {
+    "Typescript": {
+      "name": "Typescript",
+      "icon": "assets/languages/typescript.svg",
+      "source": "icons8"
+    },
+    "HTML": {
+      "name": "HTML",
+      "icon": "assets/languages/html-5.svg",
+      "source": "icons8"
+    },
+    "Javascript": {
+      "name": "JavaScript",
+      "icon": "assets/languages/javascript.svg",
+      "source": "icons8"
+    },
+    "MySQL": {
+      "name": "MySQL",
+      "icon": "assets/languages/mysql.svg",
+      "source": "icons8"
+    }
+  },
+
+  "sources": {
+    "icons8": {
+      "name": "Icons8",
+      "url": "https://icons8.com"
+    },
+    "svgrepo": {
+      "name": "SVGRepo",
+      "url": "https://www.svgrepo.com"
+    }
+  }
+}
