@@ -6,6 +6,34 @@
   justify-content: flex-start;
 }
 
+.project-title-btn {
+  display: inline-block;
+  background-color: #222;       /* dark grey / near-black */
+  color: #fff;                  /* white text */
+  font-weight: 700;             /* strong text */
+  padding: 6px 14px;
+  border-radius: 8px;           /* curved edges */
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.project-title-btn:hover {
+  background-color: #000;       /* full black on hover */
+  transform: translateY(-1px);  /* subtle lift */
+  color: #fff;
+}
+
+.project-title-btn:active {
+  background-color: #111;       /* pressed state */
+  transform: translateY(0);
+}
+
+.disabled-btn {
+  cursor: default;
+  opacity: 0.6;
+}
+
+
 .project-image {
   max-width: 100%;
   max-height: 100%;

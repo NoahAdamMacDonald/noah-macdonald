@@ -6,10 +6,15 @@
 
   <div class="card-body">
     <h5 class="card-title">
-      <a *ngIf="projectLink; else noLink" [href]="projectLink" target="_blank">
+      <a *ngIf="projectLink; else noLink"
+        [href]="projectLink"
+        target="_blank"
+        class="project-title-btn">
         {{ title }}
       </a>
-      <ng-template #noLink>{{ title }}</ng-template>
+      <ng-template #noLink>
+        <span class="project-title-btn disabled-btn">{{ title }}</span>
+      </ng-template>
     </h5>
 
     <p class="card-text">
