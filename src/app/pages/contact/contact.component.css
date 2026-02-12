@@ -18,3 +18,30 @@
 .contact-info a:hover {
   text-decoration: underline;
 }
+
+.contact-info {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: left;
+
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+.info-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.info-label {
+  width: 80px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-weight: 500;
+}
