@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { IconService } from '../../services/icon.service';
 @Component({
   selector: 'app-project-card',
   imports: [CommonModule],
@@ -8,6 +8,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './project-card.component.css',
 })
 export class ProjectCardComponent {
+  private iconService = inject(IconService);
+
   @Input() title!: string;
   @Input() description!: (string | { text: string; url: string })[];
   @Input() image!: string;
@@ -25,27 +27,10 @@ export class ProjectCardComponent {
   }
 
   getSources(): { name: string; url: string }[] {
-    const usedSources = new Set(
-      [...this.skills, ...this.languages].map((i) => i.source),
-    );
-
-    return Array.from(usedSources).map((key) => this.sources[key]);
+    return this.iconService.getSourcesFromIcons(this.skills, this.languages, this.sources);
   }
 
   formatSources() : string {
-    const sources = this.getSources();
-
-    if (sources.length === 0) return '';
-    if (sources.length === 1) return `Icons from ${sources[0].name}`;
-    if (sources.length === 2)
-      return `Icons from ${sources[0].name} and ${sources[1].name}`;
-
-    const allButLast = sources
-      .slice(0, -1)
-      .map((s) => s.name)
-      .join(', ');
-    const last = sources[sources.length - 1].name;
-
-    return `Icons from ${allButLast} and ${last}`;
+    return this.iconService.formatSources(this.skills, this.languages, this.sources);
   }
 }

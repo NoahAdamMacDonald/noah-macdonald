@@ -31,6 +31,21 @@
       "name": "CloudFlare",
       "icon": "assets/skills/cloudflare.svg",
       "source": "icons8"
+    },
+    "Vue": {
+      "name": "Vue",
+      "icon": "assets/skills/vueJs.svg",
+      "source": "svgrepo"
+    },
+    "JCL": {
+      "name": "JCL Job Control Language",
+      "icon": "assets/skills/jcl.svg",
+      "source": "custom"
+    },
+    "Spring": {
+      "name": "Spring",
+      "icon": "assets/skills/spring.svg",
+      "source": "svgrepo"
     }
   },
 
@@ -54,6 +69,36 @@
       "name": "MySQL",
       "icon": "assets/languages/mysql.svg",
       "source": "icons8"
+    },
+    "Cpp": {
+      "name": "C++",
+      "icon": "assets/languages/c-plus-plus.svg",
+      "source": "icons8"
+    },
+    "CSharp": {
+      "name": "C#",
+      "icon": "assets/languages/c-sharp.svg",
+      "source": "svgrepo"
+    },
+    "Java": {
+      "name": "Java",
+      "icon": "assets/languages/java.svg",
+      "source": "icons8"
+    },
+    "PHP": {
+      "name": "PHP",
+      "icon": "assets/languages/php.svg",
+      "source": "svgrepo"
+    },
+    "COBOL": {
+      "name": "COBOL",
+      "icon": "assets/languages/cobol.svg",
+      "source": "svgrepo"
+    },
+    "Python": {
+      "name": "Python",
+      "icon": "assets/languages/python.svg",
+      "source": "icons8"
     }
   },
 
@@ -65,6 +110,10 @@
     "svgrepo": {
       "name": "SVGRepo",
       "url": "https://www.svgrepo.com"
+    },
+    "custom": {
+      "name": "Custom",
+      "url": "https://github.com/NoahAdamMacDonald"
     }
   }
 }

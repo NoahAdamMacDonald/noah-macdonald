@@ -7,6 +7,9 @@ Education component contains
   Graduation
   Skills and languages: as icons
 
+  Current plan is use icons.json for skills/languages, add school image to assets/education folder,
+  create json file for school, school.json
+
 
 Certifications component contains, display as list
   Certification name
