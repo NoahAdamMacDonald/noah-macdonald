@@ -14,3 +14,33 @@
 h2 {
   margin-bottom: 2rem;
 }
+
+.collapse-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(0deg);
+  transition: transform 0.25s ease;
+}
+
+.collapse-toggle[aria-expanded="false"] .toggle-icon {
+  transform: rotate(-90deg);
+  transition: transform 0.25s ease;
+}
+
+/*Headers*/
+.collapse-toggle {
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #0d6efd;
+  background-color: #f8f9fa;
+  transition: background-color 0.2s ease;
+}
+
+.collapse-toggle:hover {
+  background-color: #eef2f6;
+}
+
+.collapse-toggle[aria-expanded="false"] {
+  border-left-color: #6c757d;
+}
+
+
+
+
