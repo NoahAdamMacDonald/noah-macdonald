@@ -1,20 +1,42 @@
 <div class="container my-5">
   <h2 class="fw-bold mb-4">Education</h2>
 
-  <div class="education-stack">
-    <app-school-card
-      *ngFor="let s of schools"
-      [name]="s.name"
-      [location]="s.location"
-      [image]="s.image"
-      [program]="s.program"
-      [start]="s.start"
-      [end]="s.end"
-      [skills]="mapIcons(s.skills, 'skills')"
-      [languages]="mapIcons(s.languages, 'languages')"
-      [sources]="sources">
-    </app-school-card>
+  <div class="container mb-5">
+    <h3 class="fw-bold mb-4">Schools</h3>
 
+    <div class="education-stack">
+      <app-school-card
+        *ngFor="let s of schools"
+        [name]="s.name"
+        [location]="s.location"
+        [image]="s.image"
+        [program]="s.program"
+        [start]="s.start"
+        [end]="s.end"
+        [skills]="mapIcons(s.skills, 'skills')"
+        [languages]="mapIcons(s.languages, 'languages')"
+        [sources]="sources">
+      </app-school-card>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <h3 class="fw-bold mb-4">Certifications</h3>
+
+    <div class="certificate-stack">
+      <app-certificate-card
+        *ngFor="let c of certificates"
+        [name]="c.name"
+        [certifier]="c.certifier"
+        [date]="c.date"
+        [description]="c.description"
+        [certifier]="c.certifier"
+        [skills]="mapIcons(c.skills, 'skills')"
+        [languages]="mapIcons(c.languages, 'languages')"
+        [pdf]="c.pdf"
+        [sources]="sources">
+      </app-certificate-card>
+    </div>
   </div>
 </div>
 

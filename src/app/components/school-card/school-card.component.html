@@ -22,34 +22,38 @@
         </p>
 
         <!-- Skills -->
-        <hr class="footer-divider" *ngIf="skills.length > 0">
-        <div *ngIf="skills.length > 0" class="footer-row">
-          <span class="footer-label"><strong>Skills:</strong></span>
-          <div class="icon-row">
-            <ng-container *ngFor="let skill of skills">
-              <img
-                [src]="skill.icon"
-                [alt]="skill.name"
-                [title]="skill.name"
-                class="skill-icon"
-              >
-            </ng-container>
+        <div *ngIf="skills.length > 0">
+          <hr class="footer-divider">
+          <div class="footer-row">
+            <span class="footer-label"><strong>Skills:</strong></span>
+            <div class="icon-row">
+              <ng-container *ngFor="let skill of skills">
+                <img
+                  [src]="skill.icon"
+                  [alt]="skill.name"
+                  [title]="skill.name"
+                  class="skill-icon"
+                >
+              </ng-container>
+            </div>
           </div>
         </div>
 
         <!-- Languages -->
-         <hr class="footer-divider" *ngIf="languages.length > 0">
-        <div *ngIf="languages.length > 0" class="footer-row">
-          <span class="footer-label"><strong>Languages:</strong></span>
-          <div class="icon-row">
-            <ng-container *ngFor="let lang of languages">
-              <img
-                [src]="lang.icon"
-                [alt]="lang.name"
-                [title]="lang.name"
-                class="skill-icon"
-              >
-            </ng-container>
+        <div *ngIf="languages.length > 0">
+          <hr class="footer-divider">
+          <div class="footer-row">
+            <span class="footer-label"><strong>Languages:</strong></span>
+            <div class="icon-row">
+              <ng-container *ngFor="let lang of languages">
+                <img
+                  [src]="lang.icon"
+                  [alt]="lang.name"
+                  [title]="lang.name"
+                  class="skill-icon"
+                >
+              </ng-container>
+            </div>
           </div>
         </div>
 

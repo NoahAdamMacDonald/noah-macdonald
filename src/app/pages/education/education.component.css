@@ -4,6 +4,13 @@
   gap: 2rem;
 }
 
+.certification-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
 h2 {
   margin-bottom: 2rem;
 }

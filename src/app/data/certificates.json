@@ -1,0 +1,22 @@
+{
+  "certifications": [
+    {
+      "name": "Power BI Essential Training (2024)",
+      "description": "Foundational training in Power BI dashboards, data modeling, DAX basics, and report publishing.",
+      "date": "2025-11-28",
+      "certifier": "Linkedin Learning",
+      "skills": ["PowerBI"],
+      "languages": [],
+      "pdf": "Power-BI-Essential-Training-2024.pdf"
+    },
+    {
+      "name": "Explore Web Development with Angular",
+      "description": "A 14-hour learning path covering Angular fundamentals, Typescript, component architecture, and modern web development practices.",
+      "date": "2026-01-30",
+      "certifier": "LinkedIn Learning",
+      "skills": ["Angular", "Google Cloud", "Firebase"],
+      "languages": ["Typescript", "Javascript"],
+      "pdf": "Explore-Web-Development-with-Angular.pdf"
+    }
+  ]
+}

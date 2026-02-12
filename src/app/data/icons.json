@@ -43,9 +43,19 @@
       "source": "custom"
     },
     "Spring": {
-      "name": "Spring",
+      "name": "Spring Web Services",
       "icon": "assets/skills/spring.svg",
       "source": "svgrepo"
+    },
+    "Thymeleaf": {
+      "name": "Thymeleaf",
+      "icon": "assets/skills/thymeleaf.svg",
+      "source": "icons8"
+    },
+    "PowerBI": {
+      "name": "PowerBI",
+      "icon": "assets/skills/power-bi.svg",
+      "source": "icons8"
     }
   },
 

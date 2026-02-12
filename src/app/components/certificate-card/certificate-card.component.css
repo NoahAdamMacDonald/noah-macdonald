@@ -1,0 +1,15 @@
+.certification-card {
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+@media (max-width: 576px) {
+  .certification-card {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .footer-row {
+    justify-content: center;
+  }
+}

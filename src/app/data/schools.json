@@ -17,7 +17,7 @@
       "start": "2023",
       "end": "2026",
       "program": "Computer Programming & Analysis",
-      "skills": ["Vue", "JCL", "Spring"],
+      "skills": ["Vue", "JCL", "Spring", "Thymeleaf"],
       "languages": ["Cpp", "CSharp", "HTML", "Javascript", "MySQL", "PHP", "COBOL", "Java"]
     }
   ]
