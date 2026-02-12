@@ -1,1 +1,51 @@
+body {
+  padding-top: 45px; /*Fix spacing for navbar*/
+}
 
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-icon,
+.github-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.github-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.skill-icon:hover,
+.github-icon:hover {
+  transform: scale(1.15);
+}
+
+.icon-attribution {
+  font-size: 0.7rem;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.footer-label {
+  white-space: nowrap;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 8px 0;
+}

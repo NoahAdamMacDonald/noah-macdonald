@@ -1,1 +1,71 @@
-<p>school-card works!</p>
+<div class="card shadow-sm school-card">
+  <div class="row g-0 align-items-center">
+
+    <!-- Image -->
+    <div class="col-12 col-md-4 d-flex justify-content-center">
+      <img [src]="image" [alt]="name" class="school-logo">
+    </div>
+
+    <!-- Body -->
+    <div class="col-12 col-md-8">
+      <div class="card-body">
+
+        <h4 class="fw-bold mb-1">{{ name }}</h4>
+        <p class="text-muted mb-2">{{ location }}</p>
+
+        <p *ngIf="program" class="mb-1">
+          <strong>Program:</strong> {{ program }}
+        </p>
+
+        <p class="mb-3">
+          <strong>Years:</strong> {{ start }} - {{ end }}
+        </p>
+
+        <!-- Skills -->
+        <hr class="footer-divider" *ngIf="skills.length > 0">
+        <div *ngIf="skills.length > 0" class="footer-row">
+          <span class="footer-label"><strong>Skills:</strong></span>
+          <div class="icon-row">
+            <ng-container *ngFor="let skill of skills">
+              <img
+                [src]="skill.icon"
+                [alt]="skill.name"
+                [title]="skill.name"
+                class="skill-icon"
+              >
+            </ng-container>
+          </div>
+        </div>
+
+        <!-- Languages -->
+         <hr class="footer-divider" *ngIf="languages.length > 0">
+        <div *ngIf="languages.length > 0" class="footer-row">
+          <span class="footer-label"><strong>Languages:</strong></span>
+          <div class="icon-row">
+            <ng-container *ngFor="let lang of languages">
+              <img
+                [src]="lang.icon"
+                [alt]="lang.name"
+                [title]="lang.name"
+                class="skill-icon"
+              >
+            </ng-container>
+          </div>
+        </div>
+
+        <hr class="footer-divider">
+        <div class="icon-attribution text-muted footer-row" *ngIf="getSources().length > 0">
+          Icons from
+          <ng-container *ngFor="let source of getSources(); let i = index; let last = last">
+            <a [href]="source.url" target="_blank">{{ source.name }}</a>
+            <span *ngIf="!last">
+              <span *ngIf="i < getSources().length - 2">, </span>
+              <span *ngIf="i === getSources().length - 2"> and </span>
+            </span>
+          </ng-container>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

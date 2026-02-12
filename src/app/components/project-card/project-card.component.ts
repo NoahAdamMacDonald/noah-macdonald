@@ -29,8 +29,4 @@ export class ProjectCardComponent {
   getSources(): { name: string; url: string }[] {
     return this.iconService.getSourcesFromIcons(this.skills, this.languages, this.sources);
   }
-
-  formatSources() : string {
-    return this.iconService.formatSources(this.skills, this.languages, this.sources);
-  }
 }

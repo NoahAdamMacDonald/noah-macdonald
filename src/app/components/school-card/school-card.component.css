@@ -1,0 +1,24 @@
+.school-card {
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 1.25rem;
+}
+
+.school-logo {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .school-card {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .footer-row {
+    justify-content: center;
+  }
+}
