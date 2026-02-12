@@ -1,0 +1,16 @@
+Education component contains
+  School image
+  School name
+  location
+  Program: highschool does not have a program but college does
+  Start date
+  Graduation
+  Skills and languages: as icons
+
+
+Certifications component contains, display as list
+  Certification name
+  Description of certification
+  Date earned
+  Certifier
+  Skills and languages: as icons

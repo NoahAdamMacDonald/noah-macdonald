@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 
-import projectsData from '../../../projects.json';
-import iconsData from '../../../icons.json';
+import projectsData from '../../data/projects.json';
+import iconsData from '../../data/icons.json';
 import { IconRegistry } from '../../../types/icon-registry.type';
 
 @Component({
