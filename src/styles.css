@@ -43,3 +43,9 @@ body {
   border-top: 1px solid #ddd;
   margin: 8px 0;
 }
+
+
+html {
+  overflow-y: scroll; /*Reserve scrollbar space to keep consistent style*/
+}
+

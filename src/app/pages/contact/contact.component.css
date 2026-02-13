@@ -4,6 +4,7 @@
   overflow: hidden;
 }
 
+
 /* Ensure LinkedIn badge doesn't shrink */
 .linkedin-badge-wrapper {
   flex-shrink: 0;
