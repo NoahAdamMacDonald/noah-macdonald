@@ -1,11 +1,45 @@
 <div class="container my-5">
   <h1 class="fw-bold mb-4">Welcome to My Portfolio</h1>
 
-  <p class="lead mb-4">
-    I'm Noah — a dedicated student and developer based in Kingston, Ontario.
-    Explore my education, projects, and ways to get in touch.
-  </p>
+  <!--Main Section-->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-8">
+      <p class="lead">
+        I'm Noah — a dedicated student and developer based in Kingston, Ontario.
+      This is my personal portfolio website where I plan on it being an all‑in‑one hub for my projects and blog.
+      Explore my education, projects, and ways to get in touch.
+      </p>
+    </div>
 
+    <div class="col-md-4 mb-3 mb-md-0">
+      <app-linkedin-badge></app-linkedin-badge>
+    </div>
+  </div>
 
-  <app-linkedin-badge></app-linkedin-badge>
+  <!--Icons Section-->
+  <div class="mb-5">
+    <h3 class="fw-bold mb-3">Skills</h3>
+
+    <div class="d-flex flex-wrap gap-3">
+      <img *ngFor="let skill of skills"
+        [src]="skill.icon"
+        [alt]="skill.name"
+        [title]="skill.name"
+        class="skill-icon">
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <h3 class="fw-bold mb-3">Languages</h3>
+
+    <div class="d-flex flex-wrap gap-3">
+      <img *ngFor="let lang of languages"
+        [src]="lang.icon"
+        [alt]="lang.name"
+        [title]="lang.name"
+        class="skill-icon">
+    </div>
+  </div>
+
+  <app-icon-attribution [sources]="getSources()"></app-icon-attribution>
 </div>

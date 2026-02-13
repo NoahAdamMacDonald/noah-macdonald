@@ -1,0 +1,25 @@
+{
+  "skills": [
+    "Angular",
+    "Firebase",
+    "Google Cloud",
+    "CloudFlare",
+    "Hapi",
+    "Vue",
+    "JCL",
+    "Spring",
+    "Thymeleaf"
+  ],
+  "languages": [
+    "Cpp",
+    "CSharp",
+    "HTML",
+    "Javascript",
+    "Typescript",
+    "MySQL",
+    "PHP",
+    "COBOL",
+    "Java",
+    "Python"
+  ]
+}

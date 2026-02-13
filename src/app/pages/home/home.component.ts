@@ -1,13 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 import { LinkedinBadgeComponent } from "../../components/linkedin-badge/linkedin-badge.component";
+import { IconAttributionComponent } from '../../components/icon-attribution/icon-attribution.component';
+import { IconService } from '../../services/icon.service';
+
+import homeData from "../../data/home.json";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [LinkedinBadgeComponent],
+  imports: [LinkedinBadgeComponent, IconAttributionComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  iconService = inject(IconService);
 
+  skills = this.iconService.mapIcons(homeData.skills, 'skills');
+  languages = this.iconService.mapIcons(homeData.languages, 'languages');
+
+  getSources() {
+    return this.iconService.getSourcesFromIcons(this.skills, this.languages, this.iconService.Sources);
+  }
 }
