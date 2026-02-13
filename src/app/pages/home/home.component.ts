@@ -16,8 +16,8 @@ import homeData from "../../data/home.json";
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  iconService = inject(IconService);
-  title = inject(Title);
+  private iconService = inject(IconService);
+  private title = inject(Title);
 
   skills = this.iconService.mapIcons(homeData.skills, 'skills');
   languages = this.iconService.mapIcons(homeData.languages, 'languages');

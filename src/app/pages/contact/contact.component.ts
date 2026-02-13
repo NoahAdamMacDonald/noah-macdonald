@@ -11,7 +11,7 @@ import { LinkedinBadgeComponent } from "../../components/linkedin-badge/linkedin
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-  title = inject(Title);
+  private title = inject(Title);
 
   constructor() {
     this.title.setTitle('Contact');
