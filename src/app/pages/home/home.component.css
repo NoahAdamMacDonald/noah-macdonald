@@ -1,0 +1,31 @@
+.hero-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  background: #f8f9fa;
+  padding: 1.5rem 1.75rem;
+  border-left: 4px solid #0d6efd;
+  border-radius: 6px;
+}
+
+.icon-section {
+  margin-top: 4rem;
+}
+
+.section-divider {
+  margin: 3rem 0 2rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.9;
+}
+
+.skill-icon:hover {
+  transform: scale(1.12);
+  opacity: 1;
+}

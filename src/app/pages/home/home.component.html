@@ -4,7 +4,7 @@
   <!--Main Section-->
   <div class="row align-items-center mb-5">
     <div class="col-md-8">
-      <p class="lead">
+      <p class="hero-text">
         I'm Noah — a dedicated student and developer based in Kingston, Ontario.
       This is my personal portfolio website where I plan on it being an all‑in‑one hub for my projects and blog.
       Explore my education, projects, and ways to get in touch.
@@ -16,11 +16,13 @@
     </div>
   </div>
 
-  <!--Icons Section-->
-  <div class="mb-5">
-    <h3 class="fw-bold mb-3">Skills</h3>
 
-    <div class="d-flex flex-wrap gap-3">
+  <!--Icons Section-->
+  <div class="icon-section mb-5">
+    <h3 class="fw-bold mb-3">Skills</h3>
+    <div class="section-divider"></div>
+
+    <div class="d-flex flex-wrap justify-content-center gap-3">
       <img *ngFor="let skill of skills"
         [src]="skill.icon"
         [alt]="skill.name"
@@ -29,10 +31,11 @@
     </div>
   </div>
 
-  <div class="mb-5">
+  <div class="icon-section mb-5">
     <h3 class="fw-bold mb-3">Languages</h3>
+    <div class="section-divider"></div>
 
-    <div class="d-flex flex-wrap gap-3">
+    <div class="d-flex flex-wrap justify-content-center gap-3">
       <img *ngFor="let lang of languages"
         [src]="lang.icon"
         [alt]="lang.name"
