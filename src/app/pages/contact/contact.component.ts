@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 import { LinkedinBadgeComponent } from "../../components/linkedin-badge/linkedin-badge.component";
 
 @Component({
@@ -9,5 +11,9 @@ import { LinkedinBadgeComponent } from "../../components/linkedin-badge/linkedin
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  title = inject(Title);
 
+  constructor() {
+    this.title.setTitle('Contact');
+  }
 }
