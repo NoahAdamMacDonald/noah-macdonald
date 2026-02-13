@@ -56,6 +56,16 @@
       "name": "PowerBI",
       "icon": "assets/skills/power-bi.svg",
       "source": "icons8"
+    },
+    "Azure": {
+      "name": "Azure",
+      "icon": "assets/skills/azure.svg",
+      "source": "Microsoft Azure Architecture Icons"
+    },
+    "Azure Custom Vision": {
+      "name": "Azure Custom Vision",
+      "icon": "assets/skills/azure-custom-vision.svg",
+      "source": "Microsoft Azure Architecture Icons"
     }
   },
 
@@ -120,6 +130,10 @@
     "svgrepo": {
       "name": "SVGRepo",
       "url": "https://www.svgrepo.com"
+    },
+    "Microsoft Azure Architecture Icons": {
+      "name": "Microsoft Azure Architecture Icons",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/icons/#icon-terms"
     },
     "custom": {
       "name": "Custom",

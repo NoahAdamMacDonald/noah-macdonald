@@ -24,6 +24,15 @@
       "languages": ["Typescript", "HTML"],
       "github": "https://github.com/NoahAdamMacDonald/noah-macdonald",
       "projectLink": "https://noah-macdonald.com"
+    },
+    {
+      "title": "Car Detector Project",
+      "description":["NOTE: Not available anymore. Car detector project created for a larger proof of concept project to automate traffic lights using AI to improve the flow of traffic. Car Detector (Python), ScreenGrabber (CSharp, not shown in Github repo), Azure AI created by me. Remainder of project created by team members."],
+      "image": "assets/projects/car-detector.webp",
+      "skills": ["Azure Custom Vision", "Azure"],
+      "languages": ["CSharp", "Python"],
+      "github": "https://github.com/NoahAdamMacDonald/car-detector-project",
+      "projectLink": "https://github.com/NoahAdamMacDonald/car-detector-project"
     }
   ]
 }
