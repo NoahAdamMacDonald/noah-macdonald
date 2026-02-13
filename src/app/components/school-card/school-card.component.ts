@@ -2,11 +2,12 @@ import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { IconService } from '../../services/icon.service';
+import { IconAttributionComponent } from "../icon-attribution/icon-attribution.component";
 
 @Component({
   selector: 'app-school-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, IconAttributionComponent],
   templateUrl: './school-card.component.html',
   styleUrl: './school-card.component.css',
 })

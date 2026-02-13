@@ -1,9 +1,10 @@
 import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IconService } from '../../services/icon.service';
+import { IconAttributionComponent } from "../icon-attribution/icon-attribution.component";
 @Component({
   selector: 'app-project-card',
-  imports: [CommonModule],
+  imports: [CommonModule, IconAttributionComponent],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css',
 })

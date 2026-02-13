@@ -1,0 +1,10 @@
+<div class="icon-attribution text-muted" *ngIf="sources.length > 0">
+  Icons from
+  <ng-container *ngFor="let source of sources; let i = index; let last = last">
+    <a [href]="source.url" target="_blank">{{ source.name }}</a>
+    <span *ngIf="!last">
+      <span *ngIf="i < sources.length - 2">, </span>
+      <span *ngIf="i === sources.length - 2"> and </span>
+    </span>
+  </ng-container>
+</div>

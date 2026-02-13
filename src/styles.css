@@ -27,12 +27,6 @@ body {
   transform: scale(1.15);
 }
 
-.icon-attribution {
-  font-size: 0.7rem;
-  margin-top: 8px;
-  text-align: center;
-}
-
 .footer-row {
   display: flex;
   align-items: center;
