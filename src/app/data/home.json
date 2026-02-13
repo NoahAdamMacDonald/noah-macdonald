@@ -8,7 +8,10 @@
     "Vue",
     "JCL",
     "Spring",
-    "Thymeleaf"
+    "Thymeleaf",
+    "PowerBI",
+    "Azure",
+    "Azure Custom Vision"
   ],
   "languages": [
     "Cpp",
