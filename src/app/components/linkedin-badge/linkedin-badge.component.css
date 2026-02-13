@@ -37,7 +37,7 @@ img.rounded-circle {
   box-shadow: 0 0 6px rgba(0,0,0,0.15);
 }
 
-.linkedin-btn {
+.profile-btn {
   background-color: #0077B7;
   border-color: #0077B7;
   font-weight: 600;
@@ -46,12 +46,12 @@ img.rounded-circle {
   transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-.linkedin-btn:hover {
+.profile-btn:hover {
   background-color: #005f94;
   transform: translateY(-1px);
 }
 
-.linkedin-btn:active {
+.profile-btn:active {
   background-color: #004f7a;
   transform: translateY(0);
 }
