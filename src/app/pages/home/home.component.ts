@@ -27,6 +27,6 @@ export class HomeComponent {
   }
 
   constructor() {
-    this.title.setTitle('Noah MacDonald!');
+    this.title.setTitle('Noah MacDonald');
   }
 }
