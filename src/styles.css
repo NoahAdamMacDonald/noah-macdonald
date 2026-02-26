@@ -6,7 +6,7 @@
 }
 
 .dark-mode {
-  --bg: #121212;
+  --bg: hsl(0, 0%, 20%);
   --text: #e0e0e0;
   --card-bg: #1e1e1e;
   --border: #ffffff26;
