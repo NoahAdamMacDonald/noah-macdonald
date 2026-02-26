@@ -1,9 +1,24 @@
+:host {
+  --hero-bg: #f8f9fa;
+  --hero-text: #000000;
+  --hero-border: #0d6efd;
+  --divider-color: rgba(0,0,0,0.1);
+}
+
+:host-context(.dark-mode) {
+  --hero-bg: hsl(0, 0%, 18%);
+  --hero-text: hsl(0, 0%, 90%);
+  --hero-border: #0d6efd; /* keep brand blue */
+  --divider-color: rgba(255,255,255,0.15);
+}
+
 .hero-text {
   font-size: 1.25rem;
   line-height: 1.6;
-  background: #f8f9fa;
+  background: var(--hero-bg);
+  color: var(--hero-text);
   padding: 1.5rem 1.75rem;
-  border-left: 4px solid #0d6efd;
+  border-left: 4px solid var(--hero-border);
   border-radius: 6px;
 }
 
@@ -13,7 +28,7 @@
 
 .section-divider {
   margin: 3rem 0 2rem;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid var(--divider-color);
 }
 
 
