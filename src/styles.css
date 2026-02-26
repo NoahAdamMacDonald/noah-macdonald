@@ -1,4 +1,24 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f8f9fa;
+  --border: rgba(0,0,0,0.1);
+  --navbar-bg: #212529;
+  --navbar-text: #ffffff;
+}
+
+.dark-mode {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --border: rgba(255,255,255,0.15);
+  --navbar-bg: #000000;
+  --navbar-text: #ffffff;
+}
+
 body {
+  background-color: var(--bg);
+  color: var(--text);
   padding-top: 45px; /*Fix spacing for navbar*/
 }
 
