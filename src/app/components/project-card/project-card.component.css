@@ -1,3 +1,33 @@
+:host {
+  --card-bg: #ffffff;
+  --card-shadow: hsla(0, 0%, 0%, 0.15);
+  --text-main: #000000;
+  --text-muted: hsl(0, 0%, 40%);
+  --divider: rgba(0,0,0,0.1);
+  --btn-bg: #222;
+  --btn-text: #ffffff;
+  --btn-bg-hover: #000;
+  --btn-bg-active: #111;
+}
+
+:host-context(.dark-mode) {
+  --card-bg: hsl(0, 0%, 18%);
+  --card-shadow: hsla(0, 0%, 100%, 0.15);
+  --text-main: #ffffff;
+  --text-muted: hsl(0, 0%, 70%);
+  --divider: rgba(255,255,255,0.15);
+  --btn-bg: hsl(0, 0%, 25%);
+  --btn-text: #ffffff;
+  --btn-bg-hover: hsl(0, 0%, 15%);
+  --btn-bg-active: hsl(0, 0%, 10%);
+}
+
+.card {
+  background: var(--card-bg) !important;
+  box-shadow: 0 0 6px var(--card-shadow);
+  color: var(--text-main);
+}
+
 .project-image-wrapper {
   height: 120px;
   padding: 12px;
@@ -8,8 +38,8 @@
 
 .project-title-btn {
   display: inline-block;
-  background-color: #222;
-  color: #fff;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
   font-weight: 700;
   padding: 6px 14px;
   border-radius: 8px;
@@ -18,14 +48,14 @@
 }
 
 .project-title-btn:hover {
-  background-color: #000;
+  background-color: var(--btn-bg-hover);
   transform: translateY(-1px);
-  color: #fff;
+  color: var(--btn-text);
   text-decoration: underline;
 }
 
 .project-title-btn:active {
-  background-color: #111;
+  background-color: var(--btn-bg-active);
   transform: translateY(0);
 }
 
@@ -39,6 +69,21 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+
+.card-text {
+  color: var(--text-main);
+}
+
+.github-icon {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.github-icon:hover {
+  background-color: hsl(0, 0%, 50%);
+  border-radius: 16px;
 }
 
 

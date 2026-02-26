@@ -1,3 +1,8 @@
+/*TODO add dark mode to project-card, project-page and contact page
+       change dark mode toggle to icon
+       change headshot icon to have darkmode version.
+*/
+
 :host {
   --header-bg: #f8f9fa;
   --header-bg-hover: #eef2f6;
