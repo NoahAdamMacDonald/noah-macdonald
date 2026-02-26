@@ -1,7 +1,35 @@
+:host {
+  --card-bg: #ffffff;
+  --card-shadow: hsla(0, 0%, 0%, 0.15);
+  --text-main: #000000;
+  --text-muted: hsl(0, 0%, 40%);
+  --divider: rgba(0,0,0,0.1);
+}
+
+:host-context(.dark-mode) {
+  --card-bg: hsl(0, 0%, 18%);
+  --card-shadow: hsla(0, 0%, 100%, 0.15);
+  --text-main: #ffffff;
+  --text-muted: hsl(0, 0%, 70%);
+  --divider: rgba(255,255,255,0.15);
+}
+
+
 .school-card {
   border-radius: 14px;
   overflow: hidden;
   padding: 1.25rem;
+  background: var(--card-bg) !important;
+  box-shadow: 0 0 6px var(--card-shadow);
+  color: var(--text-main);
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.footer-divider {
+  border-top: 1px solid var(--divider);
 }
 
 .school-logo {
