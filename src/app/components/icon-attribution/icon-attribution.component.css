@@ -1,5 +1,28 @@
+:host {
+  --attrib-text: hsl(0, 0%, 45%);
+  --attrib-link: hsl(210, 80%, 40%);
+  --attrib-hover: hsl(210, 80%, 30%);
+}
+
+:host-context(.dark-mode) {
+  --attrib-text: hsl(0, 0%, 70%);
+  --attrib-link: hsl(210, 80%, 65%);
+  --attrib-link-hover: hsl(210, 80%, 75%);
+}
+
 .icon-attribution {
   font-size: 0.7rem;
   margin-top: 8px;
   text-align: center;
+  color: var(--attrib-text) !important;
+}
+
+.icon-attribution a {
+  color: var(--attrib-link);
+  text-decoration: none;
+}
+
+.icon-attribution a:hover {
+  color: var(--attrib-link-hover);
+  text-decoration: underline;
 }
