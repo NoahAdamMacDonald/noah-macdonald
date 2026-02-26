@@ -1,3 +1,11 @@
+:host {
+  --navbar-bg: hsl(200, 25%, 80%);
+  --navbar-text: hsl(0, 0%, 40%);
+  --navbar-hover-link: #000000;
+}
+
+
+
 body {
   padding-bottom: 70px;
 }

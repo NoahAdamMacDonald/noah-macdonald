@@ -3,9 +3,6 @@
   --text: #000000;
   --card-bg: #f8f9fa;
   --border: #0000001a;
-  --navbar-bg: hsl(200, 25%, 80%);
-  --navbar-text: hsl(0, 0%, 40%);
-  --navbar-hover-link: #000000;
 }
 
 .dark-mode {
