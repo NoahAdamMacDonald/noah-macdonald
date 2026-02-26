@@ -12,8 +12,8 @@
 }
 
 :host-context(.dark-mode) {
-  --card-bg: hsl(0, 0%, 15%);
   --card-shadow: hsla(0, 0%, 100%, 0.15);
+  --card-bg: hsl(0, 0%, 20%);
   --header-bg: #005f94;
   --profile-btn-bg: #005f94;
   --profile-btn-bg-hover: #0077B7;
