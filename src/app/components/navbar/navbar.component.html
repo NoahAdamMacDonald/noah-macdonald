@@ -15,6 +15,12 @@
         <li class="nav-item"><a class="nav-link" routerLink="/education">Education</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+        <li class="nav-item d-flex align-items-center ms-3">
+          <button class="btn btn-outline-secondary" (click)="toggleTheme()">
+            <span *ngIf="isDarkMode">Dark</span>
+            <span *ngIf="!isDarkMode">Light</span>
+          </button>
+        </li>
       </ul>
     </div>
   </div>

@@ -4,6 +4,12 @@
   --navbar-hover-link: #000000;
 }
 
+:host-context(.dark-mode) {
+  --navbar-bg: #000000;
+  --navbar-text: hsl(10, 10%, 80%);
+  --navbar-hover-link: #ffffff;
+}
+
 
 
 body {
