@@ -2,18 +2,20 @@
   --bg: #ffffff;
   --text: #000000;
   --card-bg: #f8f9fa;
-  --border: rgba(0,0,0,0.1);
-  --navbar-bg: #212529;
-  --navbar-text: #ffffff;
+  --border: #0000001a;
+  --navbar-bg: hsl(200, 25%, 80%);
+  --navbar-text: hsl(0, 0%, 40%);
+  --navbar-hover-link: #000000;
 }
 
 .dark-mode {
   --bg: #121212;
   --text: #e0e0e0;
   --card-bg: #1e1e1e;
-  --border: rgba(255,255,255,0.15);
+  --border: #ffffff26;
   --navbar-bg: #000000;
-  --navbar-text: #ffffff;
+  --navbar-text: hsl(10, 10%, 80%);
+  --navbar-hover-link: #ffffff;
 }
 
 body {
