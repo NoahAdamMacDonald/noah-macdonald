@@ -19,7 +19,7 @@
   border-radius: 14px;
   overflow: hidden;
   padding: 1.25rem;
-  background: var(--card-bg) !important;
+  background: var(--card-bg);
   box-shadow: 0 0 6px var(--card-shadow);
   color: var(--text-main);
 }
