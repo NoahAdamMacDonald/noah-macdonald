@@ -1,3 +1,23 @@
+:host {
+  --header-bg: #f8f9fa;
+  --header-bg-hover: #eef2f6;
+  --header-border: #0d6efd;
+  --header-border-collapsed: #6c757d;
+  --text-main: #000000;
+  --text-muted: hsl(0, 0%, 40%);
+  --divider: rgba(0,0,0,0.1);
+}
+
+:host-context(.dark-mode) {
+  --header-bg: hsl(0, 0%, 20%);
+  --header-bg-hover: hsl(0, 0%, 25%);
+  --header-border: #0d6efd;
+  --header-border-collapsed: hsl(0, 0%, 60%);
+  --text-main: #ffffff;
+  --text-muted: hsl(0, 0%, 70%);
+  --divider: rgba(255,255,255,0.15);
+}
+
 .education-stack {
   display: flex;
   flex-direction: column;
@@ -15,6 +35,15 @@ h2 {
   margin-bottom: 2rem;
 }
 
+h2, h3, p {
+  color: var(--text-main);
+}
+
+hr {
+  border-top: 1px solid var(--divider);
+}
+
+
 .collapse-toggle[aria-expanded="true"] .toggle-icon {
   transform: rotate(0deg);
   transition: transform 0.25s ease;
@@ -28,17 +57,19 @@ h2 {
 /*Headers*/
 .collapse-toggle {
   padding: 0.75rem 1rem;
-  border-left: 4px solid #0d6efd;
-  background-color: #f8f9fa;
+  border-left: 4px solid var(--header-border);
+  background-color: var(--header-bg);
   transition: background-color 0.2s ease;
+  cursor: pointer;
+  color: var(--text-main);
 }
 
 .collapse-toggle:hover {
-  background-color: #eef2f6;
+  background-color: var(--header-bg-hover);
 }
 
 .collapse-toggle[aria-expanded="false"] {
-  border-left-color: #6c757d;
+  border-left-color: var(--header-border-collapsed);
 }
 
 
