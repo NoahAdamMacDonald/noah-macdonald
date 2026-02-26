@@ -1,14 +1,54 @@
+:host {
+  --card-bg: #ffffff;
+  --card-shadow: hsla(0, 0%, 0%, 0.15);
+  --header-bg: #0077B7;
+  --profile-btn-bg: #0077B7;
+  --profile-btn-bg-hover: #005f94;
+  --profile-btn-bg-active: #004f7a;
+  --border-color: #ffffff;
+  --head-text: #000000;
+  --job-title-text: hsl(0, 0%, 25%);
+  --muted-text: hsl(0, 0%, 50%);
+}
+
+:host-context(.dark-mode) {
+  --card-bg: hsl(0, 0%, 15%);
+  --card-shadow: hsla(0, 0%, 100%, 0.15);
+  --header-bg: #005f94;
+  --profile-btn-bg: #005f94;
+  --profile-btn-bg-hover: #0077B7;
+  --profile-btn-bg-active: #0090d0;
+  --border-color: #e0e0e0;
+  --head-text: #ffffff;
+  --job-title-text: hsl(0, 0%, 80%);
+  --muted-text: hsl(0, 0%, 60%);
+}
+
 .card {
   border-radius: 12px;
   overflow: hidden;
+  background: var(--card-bg) !important;
+  box-shadow: 0 0 6px var(--card-shadow);
 }
 
 .badge-top {
-  background-color: #0077B7;
+  background-color: var(--header-bg);
   padding: 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.heading-name {
+  color: var(--head-text);
+}
+
+.job-title {
+  color: var(--job-title-text) !important;
+}
+
+.connect-text {
+  color: var(--muted-text) !important;
 }
 
 .btn-primary {
@@ -16,16 +56,16 @@
 }
 
 img.rounded-circle {
-  border: 4px solid white;
+  border: 4px solid var(--border-color);
 }
 
 .linkedin-logo {
   width: 72px;
   height: 72px;
   border-radius: 12px;
-  background: white;
+  background: var(--border-color);
   padding: 6px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  box-shadow: 0 0 6px var(--card-shadow);
 }
 
 .headshot {
@@ -33,13 +73,13 @@ img.rounded-circle {
   height: 96px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  border: 4px solid var(--border-color);
+  box-shadow: 0 0 6px var(--card-shadow);
 }
 
 .profile-btn {
-  background-color: #0077B7;
-  border-color: #0077B7;
+  background-color: var(--profile-btn-bg);
+  border-color: var(--profile-btn-bg);
   font-weight: 600;
   border-radius: 8px;
   padding: 0.6rem 1.4rem;
@@ -47,12 +87,12 @@ img.rounded-circle {
 }
 
 .profile-btn:hover {
-  background-color: #005f94;
+  background-color: var(--profile-btn-bg-hover);
   transform: translateY(-1px);
 }
 
 .profile-btn:active {
-  background-color: #004f7a;
+  background-color: var(--profile-btn-bg-active);
   transform: translateY(0);
 }
 
