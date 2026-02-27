@@ -42,3 +42,19 @@ body {
 }
 
 
+.theme-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.theme-toggle-btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none ! important;
+  background-color: transparent ! important;
+
+}
