@@ -1,9 +1,40 @@
+:host {
+  --card-bg: #ffffff;
+  --card-shadow: hsla(0, 0%, 0%, 0.15);
+  --header-bg: #f8f9fa;
+  --info-bg: #ffffff;
+  --info-shadow: hsla(0, 0%, 0%, 0.15);
+  --text-main: #000000;
+  --text-muted: hsl(0, 0%, 40%);
+  --link: hsl(210, 80%, 40%);
+  --link-hover: hsl(210, 80%, 30%);
+}
+
+:host-context(.dark-mode) {
+  --card-bg: hsl(0, 0%, 18%);
+  --card-shadow: hsla(0, 0%, 100%, 0.15);
+  --header-bg: hsl(0, 0%, 22%);
+  --info-bg: hsl(0, 0%, 22%);
+  --info-shadow: hsla(0, 0%, 100%, 0.15);
+  --text-main: #ffffff;
+  --text-muted: hsl(0, 0%, 70%);
+  --link: hsl(210, 80%, 65%);
+  --link-hover: hsl(210, 80%, 75%);
+}
+
 .contact-card {
   max-width: 900px;
   border-radius: 14px;
   overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  color: var(--text-main);
 }
 
+.card-header {
+  background: var(--header-bg);
+  color: var(--text-main);
+}
 
 /* Ensure LinkedIn badge doesn't shrink */
 .linkedin-badge-wrapper {
@@ -16,8 +47,15 @@
   font-weight: 600;
 }
 
+.contact-info a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--link);
+}
+
 .contact-info a:hover {
   text-decoration: underline;
+  color: var(--link-hover);
 }
 
 .contact-info {
@@ -25,10 +63,18 @@
   flex-direction: column;
   gap: 0.35rem;
   text-align: left;
-
   border-radius: 12px;
   padding: 6px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  box-shadow: 0 0 6px var(--info-shadow);
+  background: var(--info-bg);
+}
+
+h2, p {
+  color: var(--text-main);
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
 }
 
 .info-row {
@@ -42,7 +88,4 @@
   text-align: left;
 }
 
-.contact-info a {
-  text-decoration: none;
-  font-weight: 500;
-}
+
