@@ -28,6 +28,12 @@ export class NavbarComponent {
 
     if (saved === 'dark') {
       this.isDarkMode = true;
+    } else {
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      this.isDarkMode = mediaQuery.matches;
+    }
+
+    if(this.isDarkMode) {
       document.body.classList.add('dark-mode');
     }
   }
