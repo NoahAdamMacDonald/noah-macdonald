@@ -33,6 +33,18 @@
       "languages": ["CSharp", "Python"],
       "github": "https://github.com/NoahAdamMacDonald/car-detector-project",
       "projectLink": "https://github.com/NoahAdamMacDonald/car-detector-project"
+    },
+    {
+      "title": "WriteME – Markdown README Editor",
+      "description": [
+        "A web-based Markdown editor built for creating and working with GitHub README files. Supports syntax highlighting for 193 languages, quick formatting tools, table editing, foldable text, emoji conversion, and more. Hosted on Cloudflare Pages with a custom redirect from my portfolio site."
+      ],
+      "image": "assets/projects/writeme-logo.webp",
+      "skills": ["Angular", "Cloudflare", "Highlight.js"],
+      "languages": ["Typescript", "HTML", "CSS"],
+      "github": "https://github.com/NoahAdamMacDonald/writeME",
+      "projectLink": "https://noah-macdonald.com/writeme"
     }
+
   ]
 }

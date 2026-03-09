@@ -66,6 +66,11 @@
       "name": "Azure Custom Vision",
       "icon": "assets/skills/azure-custom-vision.svg",
       "source": "Microsoft Azure Architecture Icons"
+    },
+    "Highlight.js": {
+      "name": "Highlight.js",
+      "icon": "assets/skills/hljs.svg",
+      "source": "Highlight.js"
     }
   },
 
@@ -134,6 +139,10 @@
     "Microsoft Azure Architecture Icons": {
       "name": "Microsoft Azure Architecture Icons",
       "url": "https://learn.microsoft.com/en-us/azure/architecture/icons/#icon-terms"
+    },
+    "Highlight.js": {
+    "name": "Highlight.js",
+    "url": "https://github.com/highlightjs"
     },
     "custom": {
       "name": "Custom",
