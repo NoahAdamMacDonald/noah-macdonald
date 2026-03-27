@@ -71,6 +71,11 @@
       "name": "Highlight.js",
       "icon": "assets/skills/hljs.svg",
       "source": "Highlight.js"
+    },
+    "Linux": {
+      "name": "Linux",
+      "icon": "assets/skills/linux.svg",
+      "source": "techicons"
     }
   },
 
@@ -124,6 +129,11 @@
       "name": "Python",
       "icon": "assets/languages/python.svg",
       "source": "icons8"
+    },
+    "Bash": {
+      "name": "Bash",
+      "icon": "assets/languages/bash.svg",
+      "source": "svgrepo"
     }
   },
 
@@ -143,6 +153,10 @@
     "Highlight.js": {
     "name": "Highlight.js",
     "url": "https://github.com/highlightjs"
+    },
+    "techicons": {
+      "name": "TechIcons",
+      "url": "https://techicons.dev"
     },
     "custom": {
       "name": "Custom",
