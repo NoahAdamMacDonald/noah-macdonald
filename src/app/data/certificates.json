@@ -17,6 +17,24 @@
       "skills": ["Angular", "Google Cloud", "Firebase"],
       "languages": ["Typescript", "Javascript"],
       "pdf": "Explore-Web-Development-with-Angular.pdf"
+    },
+    {
+      "name": "Introduction to Python",
+      "description": "Boot.dev certificate covering Python fundamentals, functions, test cases, Lists, Dictionaries, and Sets.",
+      "date": "2026-03-20",
+      "certifier": "Boot.dev",
+      "skills": [],
+      "languages": ["Python"],
+      "pdf": "bootdev-introduction-to-python.pdf"
+    },
+    {
+      "name": "Learn Linux",
+      "description": "Boot.dev certificate covering Linux command‑line usage, file system navigation, permissions, processes, and shell fundamentals.",
+      "date": "2026-03-27",
+      "certifier": "Boot.dev",
+      "skills": ["Linux"],
+      "languages": ["Bash"],
+      "pdf": "bootdev-learn-linux.pdf"
     }
-  ]
+]
 }
