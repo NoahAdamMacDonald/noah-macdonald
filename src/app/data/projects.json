@@ -44,6 +44,58 @@
       "languages": ["Typescript", "HTML"],
       "github": "https://github.com/NoahAdamMacDonald/writeME",
       "projectLink": "https://noah-macdonald.com/writeme"
+    },
+    {
+      "title": "alphacli",
+      "description": [
+        "Command Line Interface created for working with ",
+        {
+          "text": "alphavantage API. ",
+          "url": "https://www.alphavantage.co/"
+        },
+        "Supports table formatting, file exporting, saving api key locally, and more. Requires alphavantage API key."
+      ],
+      "image": "assets/projects/alphacl.webp",
+      "languages": ["Typescript"],
+      "skills": ["Bun"],
+      "github": "https://github.com/NoahAdamMacDonald/alphacli",
+      "projectLink": "https://github.com/NoahAdamMacDonald/alphacli"
+    },
+    {
+      "title": "Pokédex",
+      "description": [
+        "Expo mobile app to view pokemon information and favourite pokemon. ",
+        {
+          "text": "Uses the PokeAPI. ",
+          "url": "https://pokeapi.co/"
+        },
+        "Makes uses of AsyncStorage to for persistent storage of favourite pokemon."
+      ],
+      "image": "assets/projects/pokedex.webp",
+      "languages": ["Typescript", "HTML"],
+      "skills": ["Expo"],
+      "github": "https://github.com/NoahAdamMacDonald/pokedex",
+      "projectLink": "https://github.com/NoahAdamMacDonald/pokedex"
+    },
+    {
+      "title": "Card API - PixelBeast Deck Builder API",
+      "description": [
+        "REST API that supports POST, GET, PATCH, PUT and DELETE endpoints. built for ",
+        {
+          "text": "PixelBeast Deck Builder Mobile App (Private Repo). ",
+          "url": "https://github.com/AdamTBJohnston/GroupProjectCOMP208"
+        },
+        "Hosted online with ",
+        {
+          "text": "Fly.io",
+          "url": "https://fly.io/"
+        }
+      ],
+      "image": "assets/projects/card-api.webp",
+      "skills": ["Fly.io", "Bun", "Docker"],
+      "languages": ["Typescript", "HTML"],
+      "github": "https://github.com/NoahAdamMacDonald/card-api",
+      "projectLink": "https://card-api.fly.dev/"
     }
   ]
 }

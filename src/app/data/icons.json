@@ -92,7 +92,7 @@
       "icon": "assets/skills/docker-mark-ocean-blue.svg",
       "source": "Docker"
     },
-    "Flyio": {
+    "Fly.io": {
       "name": "Fly.io",
       "icon": "assets/skills/flyio.svg",
       "source": "Fly.io"
