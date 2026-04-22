@@ -55,7 +55,7 @@
         },
         "Supports table formatting, file exporting, saving api key locally, and more. Requires alphavantage API key."
       ],
-      "image": "assets/projects/alphacl.webp",
+      "image": "assets/projects/alphacli.webp",
       "languages": ["Typescript"],
       "skills": ["Bun"],
       "github": "https://github.com/NoahAdamMacDonald/alphacli",

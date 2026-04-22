@@ -11,7 +11,12 @@
     "Thymeleaf",
     "PowerBI",
     "Azure",
-    "Azure Custom Vision"
+    "Azure Custom Vision",
+    "Docker",
+    "Fly.io",
+    "Bun",
+    "Linux",
+    "Expo"
   ],
   "languages": [
     "Cpp",
@@ -23,6 +28,7 @@
     "PHP",
     "COBOL",
     "Java",
-    "Python"
+    "Python",
+    "Bash"
   ]
 }
