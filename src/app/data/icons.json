@@ -91,6 +91,11 @@
       "name": "Docker",
       "icon": "assets/skills/docker-mark-ocean-blue.svg",
       "source": "Docker"
+    },
+    "Flyio": {
+      "name": "Fly.io",
+      "icon": "assets/skills/flyio.svg",
+      "source": "Fly.io"
     }
   },
 
@@ -176,6 +181,10 @@
     "Docker": {
       "name": "Docker",
       "url": "https://www.docker.com/company/newsroom/media-resources/"
+    },
+    "Fly.io": {
+      "name": "Fly.io",
+      "url": "https://fly.io/docs/about/brand/"
     },
     "custom": {
       "name": "Custom",
