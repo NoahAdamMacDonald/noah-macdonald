@@ -76,6 +76,21 @@
       "name": "Linux",
       "icon": "assets/skills/linux.svg",
       "source": "techicons"
+    },
+    "Expo": {
+      "name": "Expo",
+      "icon": "assets/skills/expo.svg",
+      "source": "icons8"
+    },
+    "Bun": {
+      "name": "Bun",
+      "icon": "assets/skills/bun.svg",
+      "source": "techicons"
+    },
+    "Docker": {
+      "name": "Docker",
+      "icon": "assets/skills/docker-mark-ocean-blue.svg",
+      "source": "Docker"
     }
   },
 
@@ -157,6 +172,10 @@
     "techicons": {
       "name": "TechIcons",
       "url": "https://techicons.dev"
+    },
+    "Docker": {
+      "name": "Docker",
+      "url": "https://www.docker.com/company/newsroom/media-resources/"
     },
     "custom": {
       "name": "Custom",
