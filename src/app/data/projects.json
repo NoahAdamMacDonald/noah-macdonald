@@ -96,6 +96,32 @@
       "languages": ["Typescript", "HTML"],
       "github": "https://github.com/NoahAdamMacDonald/card-api",
       "projectLink": "https://card-api.fly.dev/"
+    },
+    {
+      "title": "PixelBeast Deck Builder Mobile App",
+      "description": [
+        "Expo mobile app for deck building game Pixel Beast. makes use of",
+        {
+          "text": "the Card API",
+          "url": "https://github.com/NoahAdamMacDonald/card-api"
+        },
+        ". This version is a clone of the ",
+        {
+          "text": "original repository (Private Repo)",
+          "url": "https://github.com/AdamTBJohnston/GroupProjectCOMP208"
+        },
+        ", group of 4 students headed by ",
+        {
+          "text": "Adam Johnston",
+          "url": "https://github.com/AdamTBJohnston"
+        },
+        ". This copy is converted to Typescript from the original Javascript, and added/modified features such as live card search, card filtering and displaying all cards on empty search."
+      ],
+      "image": "assets/projects/pixel-beast.webp",
+      "skills": ["Expo"],
+      "languages": ["Typescript", "HTML"],
+      "github": "https://github.com/NoahAdamMacDonald/Pixel-Beast-Typescript",
+      "projectLink": "https://github.com/NoahAdamMacDonald/Pixel-Beast-Typescript"
     }
   ]
 }
